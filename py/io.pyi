@@ -85,8 +85,10 @@ class TerminalWriter:
         self,
         text: str,
         *,
-        black: int, red: int, green: int, yellow: int, blue: int, purple: int, cyan: int, white: int, Black: int, Red: int,
-        Green: int, Yellow: int, Blue: int, Purple: int, Cyan: int, White: int, bold: int, light: int, blink: int, invert: int,
+        black: int = ..., red: int = ..., green: int = ..., yellow: int = ..., blue: int = ..., purple: int = ...,
+        cyan: int = ..., white: int = ..., Black: int = ..., Red: int = ..., Green: int = ..., Yellow: int = ...,
+        Blue: int = ..., Purple: int = ..., Cyan: int = ..., White: int = ..., bold: int = ..., light: int = ...,
+        blink: int = ..., invert: int = ...,
     ) -> str: ...
     def sep(
         self,
@@ -94,27 +96,35 @@ class TerminalWriter:
         title: Optional[str] = ...,
         fullwidth: Optional[int] = ...,
         *,
-        black: int, red: int, green: int, yellow: int, blue: int, purple: int, cyan: int, white: int, Black: int, Red: int,
-        Green: int, Yellow: int, Blue: int, Purple: int, Cyan: int, White: int, bold: int, light: int, blink: int, invert: int,
+        black: int = ..., red: int = ..., green: int = ..., yellow: int = ..., blue: int = ..., purple: int = ...,
+        cyan: int = ..., white: int = ..., Black: int = ..., Red: int = ..., Green: int = ..., Yellow: int = ...,
+        Blue: int = ..., Purple: int = ..., Cyan: int = ..., White: int = ..., bold: int = ..., light: int = ...,
+        blink: int = ..., invert: int = ...,
     ) -> None: ...
     def write(
         self,
         msg: str,
         *,
-        black: int, red: int, green: int, yellow: int, blue: int, purple: int, cyan: int, white: int, Black: int, Red: int,
-        Green: int, Yellow: int, Blue: int, Purple: int, Cyan: int, White: int, bold: int, light: int, blink: int, invert: int,
+        black: int = ..., red: int = ..., green: int = ..., yellow: int = ..., blue: int = ..., purple: int = ...,
+        cyan: int = ..., white: int = ..., Black: int = ..., Red: int = ..., Green: int = ..., Yellow: int = ...,
+        Blue: int = ..., Purple: int = ..., Cyan: int = ..., White: int = ..., bold: int = ..., light: int = ...,
+        blink: int = ..., invert: int = ...,
     ) -> None: ...
     def line(
         self,
         s: str = ...,
         *,
-        black: int, red: int, green: int, yellow: int, blue: int, purple: int, cyan: int, white: int, Black: int, Red: int,
-        Green: int, Yellow: int, Blue: int, Purple: int, Cyan: int, White: int, bold: int, light: int, blink: int, invert: int,
+        black: int = ..., red: int = ..., green: int = ..., yellow: int = ..., blue: int = ..., purple: int = ...,
+        cyan: int = ..., white: int = ..., Black: int = ..., Red: int = ..., Green: int = ..., Yellow: int = ...,
+        Blue: int = ..., Purple: int = ..., Cyan: int = ..., White: int = ..., bold: int = ..., light: int = ...,
+        blink: int = ..., invert: int = ...,
     ) -> None: ...
     def reline(
         self,
         line: str,
         *,
-        black: int, red: int, green: int, yellow: int, blue: int, purple: int, cyan: int, white: int, Black: int, Red: int,
-        Green: int, Yellow: int, Blue: int, Purple: int, Cyan: int, White: int, bold: int, light: int, blink: int, invert: int,
+        black: int = ..., red: int = ..., green: int = ..., yellow: int = ..., blue: int = ..., purple: int = ...,
+        cyan: int = ..., white: int = ..., Black: int = ..., Red: int = ..., Green: int = ..., Yellow: int = ...,
+        Blue: int = ..., Purple: int = ..., Cyan: int = ..., White: int = ..., bold: int = ..., light: int = ...,
+        blink: int = ..., invert: int = ...,
     ) -> None: ...
