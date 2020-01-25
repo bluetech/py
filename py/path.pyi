@@ -49,7 +49,7 @@ if sys.version_info >= (3, 6):
 else:
     class _PathLike(Generic[AnyStr]):
         def __fspath__(self) -> AnyStr: ...
-_PathType = Union[bytes, Text, _PathLike[Any]]
+_PathType = Union[bytes, Text, _PathLike[Any], local]
 
 class local:
     class ImportMismatchError(ImportError): ...
